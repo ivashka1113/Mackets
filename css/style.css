@@ -4,6 +4,11 @@ html {
     font-size: 16px;
 }
 
+@font-face {
+    font-family: "Gilroy-Bold";
+    src: url(../fonts/gilroy-bold.ttf);
+}
+
 .container {
     max-width: 940px;
     margin-left: 25%;
