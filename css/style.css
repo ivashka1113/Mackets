@@ -27,6 +27,9 @@ html {
     margin-bottom: 18px;
 }
 
+.Denis img {
+    width: 100%;
+}
 
 .header__menu h3,
 .lang h3 {
@@ -84,6 +87,7 @@ span.active {
     text-align: center;
     background-color: #F6F6F6;
     justify-content: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .about_me h2 {
@@ -115,12 +119,12 @@ h2.about_header {
 
 .skills__tittle {
     text-align: center;
-
 }
 
 .skills__tittle h2 {
     margin-bottom: 60px;
     font-size: 34px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .skills__tittle p {
@@ -139,4 +143,100 @@ h2.about_header {
 
 .PS>img {
     background: radial-gradient(75.99% 75.64% at 32.94% 22.44%, rgba(52, 54, 78, 0.98) 0%, #0C0824 100%);
+}
+
+.portfolio {
+    display: flex;
+    background: #F6F6F6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 90px;
+}
+
+.portfolio__tittle {
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 60px;
+}
+
+.project {
+    margin-bottom: 90px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+.project img {
+    margin-bottom: 40px;
+    transition: all 0.5s ease;
+}
+
+.project img:hover {
+    transform: scale(1.1);
+}
+
+.socials {
+    justify-content: center;
+}
+
+.socials__description span {
+    max-width: 20px;
+}
+
+.footer {
+    margin-top: 90px;
+    text-align: center;
+}
+
+.contacts h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contacts p {
+    margin-bottom: 20px;
+}
+
+.contacts button {
+    width: 180px;
+    height: 40px;
+    border: solid 1px black;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+}
+
+.contacts {
+    margin-bottom: 85px;
+}
+
+.socials__logos {
+    width: 340px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.footer button {
+    transition: all 1.5s ease;
+}
+
+.footer button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.footer a {
+    transition: all 2s ease;
+}
+
+.footer a:hover {
+    transform: scale(1.2);
+}
+
+.socials__description {
+    color: #828282;
+    font-size: 14px;
+    margin-bottom: 100px;
+    line-height: 12px;
 }
