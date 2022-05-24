@@ -1,7 +1,6 @@
 html {
     font-family: 'Gilroy-Bold';
-    line-height: 22px;
-    font-size: 16px;
+    margin-top: 20px;
 }
 
 @font-face {
@@ -11,50 +10,50 @@ html {
 
 .container {
     max-width: 940px;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 20px;
+    margin: 0 auto;
 }
 
 .header {
-    margin-bottom: 90px;
+    margin-bottom: 30px;
 }
 
 .header__menu {
     display: flex;
-    position: relative;
     justify-content: space-between;
     margin-bottom: 18px;
 }
 
-.Denis img {
-    width: 100%;
+.header__menu__elem {
+    font-size: 18px;
 }
 
-.header__menu h3,
-.lang h3 {
+.header__menu__elem,
+.lang__item {
     font-weight: 400;
     color: #828282;
-    transition: 0.15s linear;
+    transition: all 0.15s linear;
     text-align: center;
+    text-decoration: none;
 }
 
-.header__menu h3:hover,
-.lang h3:hover {
-    cursor: pointer;
+.lang-var:hover .lang__item,
+.header__menu__elem:hover {
     color: black;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transform: scale(1.05);
 }
 
-h3.active,
-span.active {
+.active {
     font-weight: 700;
     color: black;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .about {
+    margin-bottom: 100px;
+}
+
+.about__header {
     margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
@@ -62,10 +61,16 @@ span.active {
     align-items: center;
 }
 
+
+.about__img img {
+    width: 100%;
+}
+
 .name {
     font-size: 24px;
-    line-height: 1.5rem;
+    line-height: 60px;
     font-weight: 400;
+    max-width: 100px;
 }
 
 .designer {
@@ -73,9 +78,19 @@ span.active {
 }
 
 .lang {
+    display: flex;
+    font-size: 16px;
     transform: rotate(-90deg);
     padding-top: 50px;
     margin-top: 50px;
+    width: 68px;
+    justify-content: space-between;
+}
+
+.lang-separator {
+    font-weight: 700;
+    color: black;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .about_me {
@@ -98,15 +113,9 @@ h2 p {
     margin-bottom: 20px;
 }
 
-h2.about_header {
-    font-size: 24px;
+.about__tittle {
+    font-size: 40px;
     margin-bottom: 20px;
-}
-
-.programs {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
 }
 
 .skills {
@@ -117,31 +126,49 @@ h2.about_header {
     margin-bottom: 90px;
 }
 
-.skills__tittle {
+.skills__header {
     text-align: center;
 }
 
-.skills__tittle h2 {
+.skills__tittle {
     margin-bottom: 60px;
     font-size: 34px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.skills__tittle p {
+.skills__description {
     color: #070707;
     font-size: 18px;
     margin-bottom: 84px;
 }
 
-.programs img {
-    margin-bottom: 24px;
+.programs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.program {
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.program__name {
+    font-size: 14px;
+    color: #828282;
+}
+
+.programs__img {
+    margin-bottom: 30px;
 }
 
 .program__tittle {
     margin-bottom: 40px;
 }
 
-.PS>img {
+.PS .programs__img {
     background: radial-gradient(75.99% 75.64% at 32.94% 22.44%, rgba(52, 54, 78, 0.98) 0%, #0C0824 100%);
 }
 
@@ -158,6 +185,12 @@ h2.about_header {
     padding-bottom: 60px;
 }
 
+.portfolio__projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .project {
     margin-bottom: 90px;
     text-align: center;
@@ -165,44 +198,37 @@ h2.about_header {
     font-size: 18px;
 }
 
-.project img {
+.project__img {
     margin-bottom: 40px;
     transition: all 0.5s ease;
 }
 
-.project img:hover {
-    transform: scale(1.1);
+.project__url {
+    color: black;
+}
+
+.project__img:hover {
+    transform: scale(1.05);
 }
 
 .socials {
     justify-content: center;
 }
 
-.socials__description span {
-    max-width: 20px;
-}
-
 .footer {
+    margin: 0 auto;
     margin-top: 90px;
     text-align: center;
+    max-width: max-content;
 }
 
-.contacts h2 {
+.contacts__tittle {
     font-size: 24px;
     margin-bottom: 20px;
 }
 
-.contacts p {
-    margin-bottom: 20px;
-}
-
-.contacts button {
-    width: 180px;
-    height: 40px;
-    border: solid 1px black;
-    border-radius: 20px;
-    color: white;
-    background-color: black;
+.contacts__description {
+    margin-bottom: 30px;
 }
 
 .contacts {
@@ -217,26 +243,41 @@ h2.about_header {
     margin-bottom: 40px;
 }
 
-.footer button {
+.message__button {
     transition: all 1.5s ease;
 }
 
-.footer button:hover {
-    cursor: pointer;
+.message__button:hover {
     transform: scale(1.1);
 }
 
 .footer a {
-    transition: all 2s ease;
+    transition: all 1s ease;
+}
+
+.message {
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 180px;
+    text-decoration: none;
+    padding: 13px 30px;
+    font-size: 16px;
 }
 
 .footer a:hover {
     transform: scale(1.2);
 }
 
-.socials__description {
+.footer__social__url {
     color: #828282;
+    text-decoration: none;
     font-size: 14px;
+    line-height: 14px;
+}
+
+.socials__description {
     margin-bottom: 100px;
-    line-height: 12px;
+    color: #828282;
 }
