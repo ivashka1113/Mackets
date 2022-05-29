@@ -1,6 +1,7 @@
 html {
     font-family: 'Gilroy-Bold';
     margin-top: 20px;
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -93,29 +94,29 @@ html {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.about_me {
+.about__me {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100%;
-    height: 400px;
+    height: 500px;
     text-align: center;
     background-color: #F6F6F6;
     justify-content: center;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.about_me h2 {
-    font-size: 18px;
-}
-
-h2 p {
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
 
 .about__tittle {
     font-size: 40px;
     margin-bottom: 20px;
+}
+
+.about__description {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about__description p:not(:last-of-type) {
+    margin-bottom: 50px;
 }
 
 .skills {
@@ -148,11 +149,12 @@ h2 p {
 }
 
 .program {
-    width: 160px;
+    width: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    justify-content: space-between;
 }
 
 .program__name {
@@ -170,6 +172,15 @@ h2 p {
 
 .PS .programs__img {
     background: radial-gradient(75.99% 75.64% at 32.94% 22.44%, rgba(52, 54, 78, 0.98) 0%, #0C0824 100%);
+}
+
+.scores {
+    width: 165px;
+}
+
+.stars {
+    justify-content: space-between;
+    display: flex;
 }
 
 .portfolio {
